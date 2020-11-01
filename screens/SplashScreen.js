@@ -26,17 +26,19 @@ const SplashScreen = ({navigation}) => {
             source={require('../assets/logo.png')}
             style={styles.logo}
             resizeMode="stretch"
+        
             />
+            <Text style={[styles.title]}>Jk System</Text>
         </View>
         <Animatable.View 
             style={[styles.footer, {
-                backgroundColor: colors.background
+                backgroundColor: '#000029'
             }]}
             animation="fadeInUpBig"
         >
             <Text style={[styles.title, {
-                color: colors.text
-            }]}>Conecte Para criar uma conta</Text>
+                color: 'white'
+            }]}>Crie uma Conta</Text>
             <Text style={styles.text}>Entre com sua Conta</Text>
             <View style={styles.button}>
             <TouchableOpacity onPress={()=>navigation.navigate('SignInScreen')}>
@@ -75,7 +77,7 @@ const styles = StyleSheet.create({
   },
   footer: {
       flex: 1,
-      backgroundColor: '#FF6146',
+      backgroundColor: '#000029',
       borderTopLeftRadius: 30,
       borderTopRightRadius: 30,
       paddingVertical: 50,
@@ -86,12 +88,12 @@ const styles = StyleSheet.create({
       height: height_logo
   },
   title: {
-      color: '#05375a',
+      color: 'white',
       fontSize: 30,
       fontWeight: 'bold'
   },
   text: {
-      color: 'grey',
+      color: 'white',
       marginTop:5
   },
   button: {

@@ -73,24 +73,25 @@ const SignInScreen = ({navigation}) => {
 
     return (
       <View style={styles.container}>
-          <StatusBar backgroundColor='#009387' barStyle="light-content"/>
+          <StatusBar backgroundColor='#FF6146' barStyle="light-content"/>
         <View style={styles.header}>
-            <Text style={styles.text_header}>Register Now!</Text>
+            <Text style={styles.text_header}>Registre-se Agora!</Text>
         </View>
         <Animatable.View 
             animation="fadeInUpBig"
             style={styles.footer}
         >
             <ScrollView>
-            <Text style={styles.text_footer}>Username</Text>
+            <Text style={styles.text_footer}>Usuario</Text>
             <View style={styles.action}>
                 <FontAwesome 
                     name="user-o"
-                    color="#05375a"
+                    color="#FF6146"
                     size={20}
                 />
                 <TextInput 
-                    placeholder="Your Username"
+                 placeholderTextColor="gray"
+                    placeholder="Usuario"
                     style={styles.textInput}
                     autoCapitalize="none"
                     onChangeText={(val) => textInputChange(val)}
@@ -101,7 +102,7 @@ const SignInScreen = ({navigation}) => {
                 >
                     <Feather 
                         name="check-circle"
-                        color="green"
+                        color="#FF6146"
                         size={20}
                     />
                 </Animatable.View>
@@ -109,16 +110,18 @@ const SignInScreen = ({navigation}) => {
             </View>
 
             <Text style={[styles.text_footer, {
-                marginTop: 35
+                marginTop: 35,
+                color:'white'
             }]}>Senha</Text>
             <View style={styles.action}>
                 <Feather 
                     name="lock"
-                    color="#05375a"
+                    color="#FF6146"
                     size={20}
                 />
                 <TextInput 
-                    placeholder="Your Password"
+                 placeholderTextColor="gray"
+                    placeholder="Senha"
                     secureTextEntry={data.secureTextEntry ? true : false}
                     style={styles.textInput}
                     autoCapitalize="none"
@@ -130,13 +133,13 @@ const SignInScreen = ({navigation}) => {
                     {data.secureTextEntry ? 
                     <Feather 
                         name="eye-off"
-                        color="grey"
+                        color="#FF6146"
                         size={20}
                     />
                     :
                     <Feather 
                         name="eye"
-                        color="grey"
+                        color="#FF6146"
                         size={20}
                     />
                     }
@@ -149,11 +152,12 @@ const SignInScreen = ({navigation}) => {
             <View style={styles.action}>
                 <Feather 
                     name="lock"
-                    color="#05375a"
+                    color="#FF6146"
                     size={20}
                 />
                 <TextInput 
-                    placeholder="Confirme sua Senha"
+                    placeholderTextColor="gray"
+                   placeholder="Confirme sua Senha"
                     secureTextEntry={data.confirm_secureTextEntry ? true : false}
                     style={styles.textInput}
                     autoCapitalize="none"
@@ -165,13 +169,13 @@ const SignInScreen = ({navigation}) => {
                     {data.secureTextEntry ? 
                     <Feather 
                         name="eye-off"
-                        color="grey"
+                        color="#FF6146"
                         size={20}
                     />
                     :
                     <Feather 
                         name="eye"
-                        color="grey"
+                        color="#FF6146"
                         size={20}
                     />
                     }
@@ -179,11 +183,11 @@ const SignInScreen = ({navigation}) => {
             </View>
             <View style={styles.textPrivate}>
                 <Text style={styles.color_textPrivate}>
-                    By signing up you agree to our
+                Ao se inscrever, você concorda com nossos
                 </Text>
-                <Text style={[styles.color_textPrivate, {fontWeight: 'bold'}]}>{" "}Terms of service</Text>
-                <Text style={styles.color_textPrivate}>{" "}and</Text>
-                <Text style={[styles.color_textPrivate, {fontWeight: 'bold'}]}>{" "}Privacy policy</Text>
+                <Text style={[styles.color_textPrivate, {fontWeight: 'bold',color:'#F39A4A'}]}>{" "}Termos de serviços</Text>
+                <Text style={styles.color_textPrivate}>{" "}e</Text>
+                <Text style={[styles.color_textPrivate, {fontWeight: 'bold',color:'#F39A4A'}]}>{" "}Politica de privacidade</Text>
             </View>
             <View style={styles.button}>
                 <TouchableOpacity
@@ -196,7 +200,7 @@ const SignInScreen = ({navigation}) => {
                 >
                     <Text style={[styles.textSign, {
                         color:'#fff'
-                    }]}>Sign Up</Text>
+                    }]}>Registrar</Text>
                 </LinearGradient>
                 </TouchableOpacity>
 
@@ -210,7 +214,7 @@ const SignInScreen = ({navigation}) => {
                 >
                     <Text style={[styles.textSign, {
                         color: '#000029'
-                    }]}>Sign In</Text>
+                    }]}>Entrar</Text>
                 </TouchableOpacity>
             </View>
             </ScrollView>
@@ -224,7 +228,7 @@ export default SignInScreen;
 const styles = StyleSheet.create({
     container: {
       flex: 1, 
-      backgroundColor: '#000029'
+      backgroundColor: '#262D35'
     },
     header: {
         flex: 1,
@@ -234,7 +238,7 @@ const styles = StyleSheet.create({
     },
     footer: {
         flex: Platform.OS === 'ios' ? 3 : 5,
-        backgroundColor: '#fff',
+        backgroundColor: '#000029',
         borderTopLeftRadius: 30,
         borderTopRightRadius: 30,
         paddingHorizontal: 20,
@@ -246,7 +250,7 @@ const styles = StyleSheet.create({
         fontSize: 30
     },
     text_footer: {
-        color: '#05375a',
+        color: 'white',
         fontSize: 18
     },
     action: {
@@ -260,7 +264,7 @@ const styles = StyleSheet.create({
         flex: 1,
         marginTop: Platform.OS === 'ios' ? 0 : -12,
         paddingLeft: 10,
-        color: '#05375a',
+        color: '#fff',
     },
     button: {
         alignItems: 'center',
@@ -283,6 +287,6 @@ const styles = StyleSheet.create({
         marginTop: 20
     },
     color_textPrivate: {
-        color: 'grey'
+        color: '#fff'
     }
   });
