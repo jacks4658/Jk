@@ -6,16 +6,19 @@ const DetailsScreen = ({navigation}) => {
       <View style={styles.container}>
         <Text>Details Screen</Text>
         <Button
-            title="Go to details screen...again"
-            onPress={() => navigation.push("Details")}
+        color='#F39A4A'
+            title="ir para detalhes screen"
+            onPress={() => navigation.push("Detalhes")}
         />
         <Button
-            title="Go to home"
+        color='#F39A4A'
+            title="inicio"
             onPress={() => navigation.navigate("Home")}
         />
         <Button
-            title="Go back"
-            onPress={() => navigation.goBack()}
+           color='#F39A4A'
+            title="voltar"
+            onPress={() => navigation.goBack('Home')}
         />
       </View>
     );
@@ -27,6 +30,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1, 
     alignItems: 'center', 
-    justifyContent: 'center'
+    justifyContent: 'center',
+    backgroundColor:'#000029'
   },
 });

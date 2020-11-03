@@ -19,6 +19,7 @@ import {
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import{ AuthContext } from '../componentes/context';
+import { color } from 'react-native-reanimated';
 
 export function DrawerContent(props) {
 
@@ -34,24 +35,24 @@ export function DrawerContent(props) {
                         <View style={{flexDirection:'row',marginTop: 15}}>
                             <Avatar.Image 
                                 source={{
-                                    uri: 'https://api.adorable.io/avatars/50/abott@adorable.png'
+                                    uri: 'https://img.cancaonova.com/cnimages/canais/uploads/sites/6/2018/03/formacao_1600x1200-como-a-presenca-da-mulher-pode-ser-harmonia-no-mundo.jpg'
                                 }}
                                 size={50}
                             />
                             <View style={{marginLeft:15, flexDirection:'column'}}>
-                                <Title style={styles.title}>John Doe</Title>
-                                <Caption style={styles.caption}>@j_doe</Caption>
+                                <Title style={styles.title}>Alexis Texas</Title>
+                                <Caption style={styles.caption}>@Alexis_Texas</Caption>
                             </View>
                         </View>
 
                         <View style={styles.row}>
                             <View style={styles.section}>
                                 <Paragraph style={[styles.paragraph, styles.caption]}>80</Paragraph>
-                                <Caption style={styles.caption}>Following</Caption>
+                                <Caption style={styles.caption}>seguindo</Caption>
                             </View>
                             <View style={styles.section}>
                                 <Paragraph style={[styles.paragraph, styles.caption]}>100</Paragraph>
-                                <Caption style={styles.caption}>Followers</Caption>
+                                <Caption style={styles.caption}>Seguidores</Caption>
                             </View>
                         </View>
                     </View>
@@ -76,7 +77,7 @@ export function DrawerContent(props) {
                                 size={size}
                                 />
                             )}
-                            label="Profile"
+                            label="Perfil"
                             onPress={() => {props.navigation.navigate('Profile')}}
                         />
                         <DrawerItem 
@@ -98,7 +99,7 @@ export function DrawerContent(props) {
                                 size={size}
                                 />
                             )}
-                            label="Settings"
+                            label="Configuração"
                             onPress={() => {props.navigation.navigate('SettingsScreen')}}
                         />
                         <DrawerItem 
@@ -109,14 +110,14 @@ export function DrawerContent(props) {
                                 size={size}
                                 />
                             )}
-                            label="Support"
+                            label="Suporte"
                             onPress={() => {props.navigation.navigate('SupportScreen')}}
                         />
                     </Drawer.Section>
-                    <Drawer.Section title="Preferences">
+                    <Drawer.Section title="Preferencia">
                         <TouchableRipple onPress={() => {toggleTheme()}}>
                             <View style={styles.preference}>
-                                <Text>Dark Theme</Text>
+                                <Text>Tema escuro</Text>
                                 <View pointerEvents="none">
                                     <Switch value={paperTheme.dark}/>
                                 </View>
@@ -134,7 +135,7 @@ export function DrawerContent(props) {
                         size={size}
                         />
                     )}
-                    label="Sign Out"
+                    label="Sair"
                     onPress={() => {signOut()}}
                 />
             </Drawer.Section>
@@ -145,14 +146,19 @@ export function DrawerContent(props) {
 const styles = StyleSheet.create({
     drawerContent: {
       flex: 1,
+      backgroundColor:'#262D35',
+      marginTop:-10,
+      
     },
     userInfoSection: {
       paddingLeft: 20,
+      backgroundColor:'#262D35',
     },
     title: {
       fontSize: 16,
       marginTop: 3,
       fontWeight: 'bold',
+      
     },
     caption: {
       fontSize: 14,
@@ -162,6 +168,7 @@ const styles = StyleSheet.create({
       marginTop: 20,
       flexDirection: 'row',
       alignItems: 'center',
+      
     },
     section: {
       flexDirection: 'row',
@@ -173,17 +180,19 @@ const styles = StyleSheet.create({
       marginRight: 3,
     },
     drawerSection: {
-      marginTop: 15,
+      marginTop: 135,
+      
     },
     bottomDrawerSection: {
-        marginBottom: 15,
-        borderTopColor: '#f4f4f4',
-        borderTopWidth: 1
+  
+        backgroundColor:'#262D35',
+        
     },
     preference: {
       flexDirection: 'row',
       justifyContent: 'space-between',
       paddingVertical: 12,
       paddingHorizontal: 16,
+    
     },
   });

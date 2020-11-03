@@ -6,7 +6,8 @@ const ProfileScreen = () => {
       <View style={styles.container}>
         <Text>Profile Screen</Text>
         <Button
-          title="Click Here"
+        color='#F39A4A'
+          title="clica aqui"
           onPress={() => alert('Button Clicked!')}
         />
       </View>
@@ -19,6 +20,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1, 
     alignItems: 'center', 
-    justifyContent: 'center'
+    justifyContent: 'center',
+    backgroundColor:'#000029'
   },
 });

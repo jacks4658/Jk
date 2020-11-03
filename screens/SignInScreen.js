@@ -7,7 +7,9 @@ import {
     Platform,
     StyleSheet ,
     StatusBar,
-    Alert
+    Alert,
+    Image,
+    Dimensions
 } from 'react-native';
 import * as Animatable from 'react-native-animatable';
 import LinearGradient from 'react-native-linear-gradient';
@@ -115,7 +117,16 @@ const SignInScreen = ({navigation}) => {
       <View style={styles.container}>
           <StatusBar backgroundColor='#FF6146' barStyle="light-content"/>
         <View style={styles.header}>
-            <Text style={styles.text_header}>Bem Vindo!</Text>
+            
+            <Animatable.Image 
+                animation="bounceIn"
+                duraton="1500"
+            source={require('../assets/logo.png')}
+            style={styles.logo}
+            resizeMode="center"
+        
+            />
+         <Text style={styles.text_header}>Bem Vindo!</Text>
         </View>
         <Animatable.View 
             animation="fadeInUpBig"
@@ -136,7 +147,7 @@ const SignInScreen = ({navigation}) => {
                     placeholder="Usuario"
                     placeholderTextColor="#666666"
                     style={[styles.textInput, {
-                        color: 'white'
+                        color: 'white',fontSize:18
                     }]}
                     autoCapitalize="none"
                     onChangeText={(val) => textInputChange(val)}
@@ -176,7 +187,7 @@ const SignInScreen = ({navigation}) => {
                     placeholderTextColor="gray"
                     secureTextEntry={data.secureTextEntry ? true : false}
                     style={[styles.textInput, {
-                        color: colors.text
+                    color: 'white',fontSize:18
                     }]}
                     autoCapitalize="none"
                     onChangeText={(val) => handlePasswordChange(val)}
@@ -231,7 +242,7 @@ const SignInScreen = ({navigation}) => {
                     
                 >
                      <LinearGradient
-                    colors={['#FF6146', '#DB545A']}
+                    colors={['#DB545A', '#FF6146']}
                     style={styles.signIn}
                     
               >
@@ -248,6 +259,7 @@ const SignInScreen = ({navigation}) => {
 
 export default SignInScreen;
 
+
 const styles = StyleSheet.create({
     container: {
       flex: 1, 
@@ -255,22 +267,29 @@ const styles = StyleSheet.create({
     },
     header: {
         flex: 1,
-        justifyContent: 'flex-end',
-        paddingHorizontal: 20,
-        paddingBottom: 50
+        justifyContent: 'center',
+        paddingHorizontal: 100,
+        paddingBottom: 50,
+        marginTop:70,
+      
+
     },
+
+    
     footer: {
         flex: 3,
         backgroundColor: '#000029',
         borderTopLeftRadius: 30,
         borderTopRightRadius: 30,
         paddingHorizontal: 20,
-        paddingVertical: 30
+        paddingVertical: 15
     },
     text_header: {
         color: '#fff',
         fontWeight: 'bold',
-        fontSize: 30
+        fontSize: 30,
+        paddingHorizontal: 20,
+        marginTop:-17
     },
     text_footer: {
         color: 'white',
@@ -302,7 +321,7 @@ const styles = StyleSheet.create({
     },
     button: {
         alignItems: 'center',
-        marginTop: 50
+        marginTop: 10
     },
     signIn: {
         width: '100%',
@@ -315,5 +334,11 @@ const styles = StyleSheet.create({
     textSign: {
         fontSize: 18,
         fontWeight: 'bold'
-    }
+    },
+    logo: {
+        width: 200,
+        height: 200,
+        justifyContent:'center',
+        
+    } 
   });

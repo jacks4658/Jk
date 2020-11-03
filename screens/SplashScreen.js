@@ -84,8 +84,8 @@ const styles = StyleSheet.create({
       paddingHorizontal: 30
   },
   logo: {
-      width: height_logo,
-      height: height_logo
+      width: 200,
+      height: 200
   },
   title: {
       color: 'white',

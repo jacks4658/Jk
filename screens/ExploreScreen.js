@@ -6,8 +6,9 @@ const ExploreScreen = () => {
       <View style={styles.container}>
         <Text>ExploreScreen</Text>
         <Button
-          title="Click Here"
-          onPress={() => alert('Button Clicked!')}
+        color='#FF6146'
+          title="Click aqui"
+          onPress={() => alert('ola mundo')}
         />
       </View>
     );
@@ -19,6 +20,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1, 
     alignItems: 'center', 
-    justifyContent: 'center'
+    justifyContent: 'center',
+    backgroundColor:'#000029'
   },
 });
