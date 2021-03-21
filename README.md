@@ -1,6 +1,6 @@
 
 ![Alt Text](https://firebasestorage.googleapis.com/v0/b/aplicativo-35650.appspot.com/o/imagens%2FAplicativo2.gif?alt=media&token=978cbc38-bb38-4c48-9f49-f2fd062c96bb)
-![LinkedIn](https://www.linkedin.com/in/jackson-oliveira-06ab79194/) Site jk em desenvovimento [Jk System](https://www.jksystem.com.br/Download.html).
+
 
 ## oque estou usando?
 
@@ -44,5 +44,5 @@ Abrindo [http://localhost:3000](http://localhost:3000) no site da expo.
 
 
 ![Alt Text](https://firebasestorage.googleapis.com/v0/b/aplicativo-35650.appspot.com/o/imagens%2FAplicativoDes.gif?alt=media&token=3287bc0e-11f6-4ab2-9d50-5289195b8744)
-
+Meu ![LinkedIn](https://www.linkedin.com/in/jackson-oliveira-06ab79194/) e Site jk em desenvovimento [Jk System](https://www.jksystem.com.br/Download.html).
 >Esta integrado ao software Desktop que permite a cada usuario saber onde esta a encomenda
