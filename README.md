@@ -42,8 +42,5 @@ Abrindo [http://localhost:3000](http://localhost:3000) no Dispositivo e Emulador
 - `build-storybook`: crie a versão de compilação storybook
 
 
-
-![Alt Text](https://firebasestorage.googleapis.com/v0/b/aplicativo-35650.appspot.com/o/imagens%2FAplicativoDes.gif?alt=media&token=3287bc011f6-4ab2-9d50-5289195b8744)       
-
  Meu ![LinkedIn](https://www.linkedin.com/in/jackson-oliveira-06ab79194/) e Site jk em desenvovimento [Jk System](https://www.jksystem.com.br/Download.html).
->Esta integrado ao software Desktop que permite a cada usuario saber onde esta a encomenda
+
