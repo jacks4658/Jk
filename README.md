@@ -26,7 +26,7 @@ react-native run-ios
 
 ```
 
-Abrindo [http://localhost:3000](http://localhost:3000) no site da expo.
+Abrindo [http://localhost:3000](http://localhost:3000) no Dispositivo e Emulador.
 
 
 
