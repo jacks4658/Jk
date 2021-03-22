@@ -42,5 +42,5 @@ Abrindo [http://localhost:3000](http://localhost:3000) no Dispositivo e Emulador
 - `build-storybook`: crie a versão de compilação storybook
 
 
- Meu ![LinkedIn](https://www.linkedin.com/in/jackson-oliveira-06ab79194/) e Site jk em desenvovimento [Jk System](https://www.jksystem.com.br/Download.html).
+ Meu ![LinkedIn](https://www.linkedin.com/in/jackson-oliveira-06ab79194) e Site jk em desenvovimento [Jk System](https://www.jksystem.com.br/Download.html).
 
